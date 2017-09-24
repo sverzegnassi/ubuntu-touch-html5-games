@@ -7,3 +7,6 @@
 [submodule "0hn1/www"]
 	path = 0hn1/www
 	url = https://github.com/Q42/0hh1.git
+[submodule "ceros-snake/www"]
+	path = ceros-snake/www
+	url = https://github.com/mjhasbach/ceros-snake.git

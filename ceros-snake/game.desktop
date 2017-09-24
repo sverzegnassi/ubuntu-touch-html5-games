@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Ceros Snake
+Exec=qmlscene ./main.qml
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+Icon=./logo.png

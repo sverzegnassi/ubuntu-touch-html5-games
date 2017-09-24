@@ -1,0 +1,18 @@
+{
+    "architecture": "all",
+    "framework": "ubuntu-sdk-15.04.6",
+
+    "hooks": {
+        "hextris": {
+            "apparmor": "game.apparmor",
+            "desktop": "game.desktop"
+        }
+    },
+
+    "maintainer": "Stefano Verzegnassi <verzegnassi.stefano@gmail.com>",
+    "name": "sverzegnassi.ceros-snake",
+
+    "title": "Ceros Snake",
+    "description": "A remake of the iconic 70's Snake game",
+    "version": "1"
+}
