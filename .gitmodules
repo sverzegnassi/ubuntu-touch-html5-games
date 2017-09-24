@@ -4,3 +4,6 @@
 [submodule "hextris/www"]
 	path = hextris/www
 	url = https://github.com/Hextris/hextris.git
+[submodule "0hn1/www"]
+	path = 0hn1/www
+	url = https://github.com/Q42/0hh1.git

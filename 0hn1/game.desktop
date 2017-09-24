@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=0h n1
+Exec=qmlscene ./main.qml
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+Icon=./logo.png
