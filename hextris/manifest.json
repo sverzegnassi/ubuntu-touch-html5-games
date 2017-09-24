@@ -1,0 +1,18 @@
+{
+    "architecture": "all",
+    "framework": "ubuntu-sdk-15.04.6",
+
+    "hooks": {
+        "hextris": {
+            "apparmor": "game.apparmor",
+            "desktop": "game.desktop"
+        }
+    },
+
+    "maintainer": "Stefano Verzegnassi <verzegnassi.stefano@gmail.com>",
+    "name": "sverzegnassi.hextris",
+
+    "title": "Hextris",
+    "description": "HEXTRIS is a fast paced puzzle game inspired by Tetris.",
+    "version": "1"
+}
