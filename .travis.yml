@@ -19,6 +19,7 @@ script:
 deploy:
   # Push new packages on OpenStore
   - provider: script
+    skip_cleanup: true
     script: ./push-on-openstore.sh
   # Push new packages on GitHub releases
   - provider: releases
