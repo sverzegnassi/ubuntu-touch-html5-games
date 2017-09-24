@@ -1,0 +1,3 @@
+[submodule "0hn0/www"]
+	path = 0hn0/www
+	url = https://github.com/Q42/0hn0.git
