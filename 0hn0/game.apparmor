@@ -1,12 +1,6 @@
 {
     "policy_groups": [
-        "networking",
         "audio",
-        "camera",
-        "sensors",
-        "location",
-        "microphone",
-        "video",
         "webview"
     ],
     "policy_version": 1.3
