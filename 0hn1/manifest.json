@@ -14,5 +14,5 @@
 
     "title": "0h n1",
     "description": "0h h1 is a little logic game that follows three simple rules:\n- Three red tiles or three blue tiles next to each other in a row or column isn't allowed\n- A full row or column must have as many blue tiles as it has red ones.\n- No two rows are the same. No two columns either.",
-    "version": "1"
+    "version": "0.1"
 }
