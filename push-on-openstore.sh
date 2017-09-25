@@ -16,7 +16,7 @@ for i in "${CLICK_TO_UPLOAD[@]}"
 do :
 	APP_ID=$(click info $i | jq --raw-output '.name')
 	TEST_PACKAGE_EXISTS=$(./openstore-uploader-tool/open-uapp info $APP_ID)
-	if [[ "TEST_PACKAGE_EXISTS" != "Cannot find app with a id:"* ]]
+	if [[ "$TEST_PACKAGE_EXISTS" =~ "Cannot find app with a id:" ]]
 	then
 		echo "Pushing $i as new package"
 		./openstore-uploader-tool/open-uapp new $i
