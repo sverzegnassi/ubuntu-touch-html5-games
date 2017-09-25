@@ -22,6 +22,6 @@ do :
 		./openstore-uploader-tool/open-uapp new $i
 	else
 		echo "Pushing $i as an update"
-		./openstore-uploader-tool/open-uapp update $i
+		./openstore-uploader-tool/open-uapp update $i --force
 	fi
 done
