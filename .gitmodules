@@ -1,12 +1,12 @@
 [submodule "0hn0/www"]
 	path = 0hn0/www
-	url = https://github.com/Q42/0hn0.git
+	url = https://github.com/sverzegnassi/0hn0.git
 [submodule "hextris/www"]
 	path = hextris/www
-	url = https://github.com/Hextris/hextris.git
+	url = https://github.com/sverzegnassi/hextris.git
 [submodule "0hn1/www"]
 	path = 0hn1/www
-	url = https://github.com/Q42/0hh1.git
+	url = https://github.com/sverzegnassi/0hh1.git
 [submodule "ceros-snake/www"]
 	path = ceros-snake/www
 	url = https://github.com/mjhasbach/ceros-snake.git
