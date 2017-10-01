@@ -15,5 +15,5 @@ echo "Click packages to upload: ${CLICK_TO_UPLOAD[*]}"
 for i in "${CLICK_TO_UPLOAD[@]}"
 do :
 	echo "Pushing $i"
-	./openstore-uploader-tool/openstore-cli upload $i
+	./openstore-uploader-tool/openstore-cli upload $i --yes
 done
