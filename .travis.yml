@@ -13,7 +13,7 @@ addons:
     - click
     - jq
     - python3-requests
-    - python3-click
+    - python3-click-package
 
 script:
 - "./build-all.sh"
