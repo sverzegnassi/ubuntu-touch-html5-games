@@ -6,6 +6,8 @@ import QtQuick.Window 2.1
 Window {
     id: window
 
+    property string appId: "sverzegnassi.hextris"
+
     color: "white"
 
     minimumWidth: units.gu(50)
@@ -13,10 +15,6 @@ Window {
 
     width: units.gu(80)
     height: units.gu(80)
-
-    Component.onCompleted: {
-        UbuntuApplication.applicationName = "sverzegnassi.hextris"
-    }
 
     WebView {
         id: view
@@ -31,7 +29,29 @@ Window {
         preferences.allowUniversalAccessFromFileUrls: true
         preferences.appCacheEnabled: true
 
-        context: WebContext { }
+        // From Ogra's container
+        onNavigationRequested: {
+            var url = request.url.toString();
+
+            // Refuse request. Open all the link externally
+            request.action = NavigationRequest.ActionReject
+            console.warn("Opening remote: " + url);
+
+            Qt.openUrlExternally(url)
+        }
+
+        context: WebContext {
+            dataPath: "/home/phablet/.config/" + appId
+            sessionCookieMode: {
+                if (typeof webContextSessionCookieMode !== 'undefined') {
+                    if (webContextSessionCookieMode === "persistent") {
+                        return WebContext.SessionCookieModePersistent
+                    } else if (webContextSessionCookieMode === "restored") {
+                        return WebContext.SessionCookieModeRestored
+                    }
+                }
+            }
+        }
     }
 
     SplashScreen {
